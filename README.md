@@ -1,0 +1,1 @@
+##To run the project locally `npm i`, then `npm run dev`

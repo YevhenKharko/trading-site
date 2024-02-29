@@ -1,0 +1,28 @@
+@mixin grid($columns) {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat($columns, 1fr);
+  row-gap: 96px;
+  &:first-child {
+    row-gap: 32px;
+  }
+}
+
+@mixin adaptiveGrid {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: 120px;
+
+    &:first-child {
+      row-gap: 40px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 140px;
+    &:first-child {
+      row-gap: 100px;
+    }
+  }
+}
