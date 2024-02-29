@@ -8,10 +8,10 @@ export default {
   data() {
     return {
       slidesData: [
-        { id: 1, name: 'Albert Abello', position: 'Director of Growth', quote: 'This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.', imgUrl: 'src/assets/author_1.png' },
-        { id: 2, name: 'Your name', position: 'Your Position', quote: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum ad nobis repellendus nostrum, aperiam molestiae dolores voluptates illum! Asperiores!', imgUrl: 'src/assets/author_1.png' },
-        { id: 3, name: 'Your name', position: 'Director of Growth', quote: 'This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.', imgUrl: 'src/assets/author_1.png' },
-        { id: 4, name: 'Your name', position: 'Your Position', quote: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum ad nobis repellendus nostrum, aperiam molestiae dolores voluptates illum! Asperiores!', imgUrl: 'src/assets/author_1.png' },
+        { id: 1, name: 'Albert Abello', position: 'Director of Growth', quote: 'This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.', imgUrl: './assets/author_1.png' },
+        { id: 2, name: 'Your name', position: 'Your Position', quote: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum ad nobis repellendus nostrum, aperiam molestiae dolores voluptates illum! Asperiores!', imgUrl: './assets/author_1.png' },
+        { id: 3, name: 'Your name', position: 'Director of Growth', quote: 'This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.', imgUrl: './assets/author_1.png' },
+        { id: 4, name: 'Your name', position: 'Your Position', quote: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum ad nobis repellendus nostrum, aperiam molestiae dolores voluptates illum! Asperiores!', imgUrl: './assets/author_1.png' },
       ],
 
       currentSlide: 0,

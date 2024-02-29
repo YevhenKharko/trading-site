@@ -7,7 +7,7 @@
     <div class="list">
       <ul>
         <li>
-          <a href="/about">About us</a>
+          <a href="#about">About us</a>
         </li>
         <li>
           <a href="#started">Instructions</a>
