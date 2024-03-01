@@ -101,14 +101,14 @@
     }
 
     &__open {
-      height: 480px;
+      height: 350px;
       
       @media (min-width: 768px) {
-        height: 280px;
+        height: 160px;
       }
 
       @media (min-width: 1200px) {
-        height: 225px;
+        height: 110px;
       }
     }
   }
