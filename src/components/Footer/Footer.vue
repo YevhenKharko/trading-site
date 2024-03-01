@@ -1,7 +1,9 @@
 <template>
   <footer class="footer">
     <div class="logo">
-      <img src="../../assets/logo.svg" alt="logo">
+      <a href="#">
+        <img src="../../assets/logo.svg" alt="logo">
+      </a>
     </div>
 
     <div class="list">
@@ -90,6 +92,8 @@
     @media (min-width: 1200px) {
       grid-column: 11 / 12;
     }
+
+
     ul {
       display: flex;
       flex-direction: column;
@@ -108,14 +112,27 @@
       }
     }
 
+    li {
+      transform: scale(1);
+      transition: transform 0.4s ease;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+
     a {
       font-family: 'Museo Sans';
       font-weight: 700;
       color: #333;
-    }
+      transition: color 0.4s ease;
 
-    a:visited {
-      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+
+      &:visited {
+        text-decoration: none;
+      }
     }
   }
 
@@ -185,12 +202,13 @@
   margin-bottom: 32px;
 
   @media (min-width: 1200px) {
-      max-width: 380px;
-      text-align: unset;
-      grid-column: 7 / 10;
-    }
+    max-width: 380px;
+    text-align: unset;
+    grid-column: 7 / 10;
+  }
 
   p {
     margin-bottom: 0;
   }
-}</style>
+}
+</style>

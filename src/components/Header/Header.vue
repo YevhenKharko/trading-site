@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <a href="/"><img class="header__logo" src="../../assets/logo.svg" alt="logo"></a>
+    <a href="#"><img class="header__logo" src="../../assets/logo.svg" alt="logo"></a>
     <ul class="header__list">
       <li class="link"><a href="#started">How it works</a></li>
       <li class="link"><a href="#about">About</a></li>
@@ -22,7 +22,7 @@
 export default {
   methods: {
     handleClick() {
-      alert('Clicked');
+      alert('Burger menu goes here');
     }
   }
 };
@@ -30,6 +30,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../styles/mixins.scss';
+
 .header {
   display: grid;
   grid-column: 1 / -1;
@@ -84,6 +85,13 @@ export default {
   &__sign {
     display: none;
 
+    transform: scale(1);
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
     @media (min-width: 768px) {
       justify-self: end;
       grid-column: 7;
@@ -101,7 +109,7 @@ export default {
     @media (min-width: 1200px) {
       justify-self: end;
       grid-column: 12;
-      
+
     }
   }
 
@@ -130,12 +138,34 @@ export default {
 
 .link {
   height: 100%;
+  position: relative;
 
-  & a {
+  a {
     padding-block: 50%;
     color: #333;
     font-weight: 700;
     font-size: 15px;
+    transition: color 0.4s ease;
+    color: #333;
+
+    &::after {
+      content: '';
+      width: 100%;
+      left: -2000%;
+      height: 1px;
+      bottom: -10px;
+      background: #000;
+      position: absolute;
+      transition: left 0.4s ease;
+    }
+
+    &:hover {
+      color: #000;
+
+      &::after {
+        left: 0;
+      }
+    }
   }
 }
 </style>

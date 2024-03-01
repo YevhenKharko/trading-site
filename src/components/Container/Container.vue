@@ -35,6 +35,7 @@
 <style scoped lang="scss">
 @import '../../styles/mixins.scss';
 .container {
+ 
   box-sizing: border-box;
   padding-inline: 20px;
 

@@ -18,9 +18,10 @@ export default {
 
 <style lang="scss">
 .card {
-  display: grid;
-  width: 280px;
   position: relative;
+  display: grid;
+  background: #fff;
+  width: 280px;
   height: 220px;
   font-family: 'Museo Moderno';
   text-align: start;
@@ -64,77 +65,6 @@ export default {
       top: -80%;
     }
   }
-
-  &:nth-child(1),
-  &:nth-child(3) {
-    @media (min-width: 768px) {
-      &::after,
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: -70%;
-        width: 70%;
-        height: 1px;
-        background: #6248ff;
-      }
-
-      &::before {
-        width: 1px;
-        height: 21%;
-        background: #6248ff;
-      }
-
-      @media (min-width: 1200px) {
-        &::before {
-          height: 23%;
-        }
-      }
-    }
-  }
-
-  &:nth-child(2) {
-    @media (min-width: 768px) {
-
-      &::after,
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: -70%;
-        width: 70%;
-        height: 1px;
-        background: #6248ff;
-      }
-
-      &::before {
-        width: 1px;
-        height: 41%;
-        background: #6248ff;
-      }
-
-      @media (min-width: 1200px) {
-        &::before {
-          height: 43%;
-        }
-      }
-    }
-  }
-
-  &:nth-child(3) {
-    @media (min-width: 768px) {
-      &::before {
-        height: 41%;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      &::before {
-        height: 43%;
-      }
-    }
-  }
-
 
   @media (min-width: 768px) {
     width: 330px;

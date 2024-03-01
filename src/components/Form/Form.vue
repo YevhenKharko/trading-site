@@ -193,6 +193,12 @@ p {
     height: 54px;
     width: 180px;
     border-radius: 60px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 

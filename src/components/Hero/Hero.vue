@@ -19,17 +19,13 @@
   display: grid;
   grid-column: 1 / -1;
   text-align: left;
-  // padding-top: 32px;
 
   @media (min-width: 768px) {
     text-align: center;
-    // padding-top: 48px;
   }
 
   @media (min-width: 1200px) {
     text-align: left;
-    // padding-top: 100px;
-    // margin-bottom: 140px;
   }
 
   &__text {
@@ -82,6 +78,13 @@
       font-size: 14px;
       border-radius: 60px;
 
+      transform: scale(1);
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
       @media (min-width: 768px) {
         width: 260px;
         height: 55px;
@@ -93,7 +96,7 @@
       }
     }
 
-   
+
   }
 
   &__image {

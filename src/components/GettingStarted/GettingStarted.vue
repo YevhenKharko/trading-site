@@ -28,7 +28,11 @@ export default {
         :key="card.number"
         :number="card.number"
         :title="card.title"
-        :text="card.text" />
+        :text="card.text"
+      />
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
     </div>
   </section>
 </template>
@@ -38,6 +42,7 @@ export default {
   display: grid;
   grid-column: 1 / -1;
   margin: 0 auto;
+  position: relative;
 
   &__title {
     grid-column: 1 / 2;
@@ -65,6 +70,7 @@ export default {
   grid-column: 1 / -1;
   row-gap: 24px;
   column-gap: unset;
+  z-index: 2;
 
   @media (min-width: 768px) {
     column-gap: 90px;
@@ -74,5 +80,55 @@ export default {
     column-gap: 150px;
   }
 }
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  z-index: -1;
+  display: none;
+  position: absolute;
+
+  @media (min-width: 768px) {
+    width: 330px;
+    height: 240px;
+    top: 19%;
+    left: 28%;
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 60px;
+    border-top: 2px dashed #6248ff;
+    border-right: 2px dashed #6248ff;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+    width: 490px;
+    height: 200px;
+    top: 21%;
+    left: 34%;
+  }
+}
+
+.line-2 {
+    top: 35%;
+    left: 22%;
+    border-right: none;
+    border-left: 2px dashed #6248ff;
+
+    @media (min-width: 1200px) {
+    display: block;
+    top: 36%;
+    left: 22%;
+  }
+}
+
+.line-3 {
+  top: 53%;
+  @media (min-width: 1200px) {
+    top: 55%;
+    left: 35%;
+  }
 }
 </style>
